@@ -8,3 +8,6 @@ namespace: fleet-kustomize-example-context1
 kustomize:
   # To use a kustomization.yaml different from the one in the root folder
   dir: "deployment/context1"
+
+# pause tests because I don't care if it deploys but to see what the bungle is generated
+paused: true
