@@ -5,6 +5,8 @@ This example is to find a bug from generating yaml via customize has we folder-h
 This example will deploy the [Kubernetes sample guestbook](https://github.com/kubernetes/examples/tree/master/guestbook/) application
 using kustomize. The app will be deployed into the `fleet-kustomize-example` namespace.
 
+These configs work as expected via `fleet-examples/single-cluster/kustomize-multi-path/deployment/context1$ kustomize build -o apply/ .`
+
 ## Issue1 - All resources
 
 Expected GitRepo to deploy the app
