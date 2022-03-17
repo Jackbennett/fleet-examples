@@ -11,7 +11,7 @@ These configs work as expected via `fleet-examples/single-cluster/kustomize-mult
 
 Expected GitRepo to deploy the app
 
-Actually is seems to find all resoruces, bundles those, an then kustomizes it and includes into the bundle too.
+Actually it seems to find all files fromt this path, bundles those, runs kustomizes anyway and has those files too in the bundle.
 
 ```yaml
 kind: GitRepo
@@ -20,7 +20,8 @@ metadata:
   name: kustomize
   namespace: fleet-local
 spec:
-  repo: https://github.com/rancher/fleet-examples
+  repo: https://github.com/Jackbennett/fleet-examples
+  branch: test-fleet
   paths:
     - single-cluster/kustomize-multi-path
 ```
@@ -38,7 +39,8 @@ metadata:
   name: kustomize
   namespace: fleet-local
 spec:
-  repo: https://github.com/rancher/fleet-examples
+  repo: https://github.com/Jackbennett/fleet-examples
+  branch: test-fleet
   paths:
     - single-cluster/kustomize-multi-path/deployment/context1
 ```
